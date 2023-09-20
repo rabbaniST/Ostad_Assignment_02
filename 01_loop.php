@@ -2,19 +2,19 @@
 
 function isEvenFor($start, $end, $step)
 {
-    for ($i = $start; $i <= $end; $i += $step) {
+    for ($i = $start+1; $i <= $end; $i +=$step) {
         if ($i % 2  == 0) {
-            echo $i . ", ";
+            echo  $i . ", ";
         }
     }
 }
 
-isEvenFor(2, 20, 2);
+isEvenFor(1, 20, 2);
 
 echo " \n";
 function isEvenWhile($start, $end, $step)
 {
-    $i = $start;
+    $i = $start+1;
     while ($i <= $end) {
         if ($i % 2 == 0) {
             echo $i . ", ";
@@ -24,14 +24,14 @@ function isEvenWhile($start, $end, $step)
     }
 }
 
-isEvenWhile(2, 20, 2);
+isEvenWhile(1, 20, 2);
 
 
 echo " \n";
 
 function isEvenDo($start, $end, $step)
 {
-    $i = $start;
+    $i = $start + 1;
     do {
         if ($i % 2 == 0) {
             echo $i . ", ";
@@ -40,4 +40,4 @@ function isEvenDo($start, $end, $step)
     } while ($i <= $end);
 }
 
-isEvenDo(2, 20, 2);
+isEvenDo(1, 20, 2);
